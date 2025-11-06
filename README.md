@@ -31,7 +31,7 @@ Bu sayede sistem, kullanıcı etkileşimleriyle **kademeli olarak kendini geliş
    - İlk bulunan domain alınarak yedek listeye eklenir.
 
 
-## Kullanılan Teknolojiler
+## Kullanılan Teknolojiler ve Modüller
 
 | Teknoloji | Amaç |
 |------------|------|
@@ -40,25 +40,13 @@ Bu sayede sistem, kullanıcı etkileşimleriyle **kademeli olarak kendini geliş
 | requests | Google API üzerinden veri çekme |
 | json | Verilerin yerel olarak saklanması |
 | Google Custom Search API | Domain bilgisinin internette aranması |
-
-
-## Dosya Yapısı
-
-| 📁 proje/ |
-| ├── domains.json | # Ana (onaylı) domain listesi |
-| ├── domains1.json | # Yedek (öğrenme aşamasında) liste |
-| ├── counter.json | # Domainlerin eşleşme sayısı |
-| ├── ayarlar.py | # API_KEY ve CX_KEY bilgileri |
-| └── main.py | # Ana çalışma dosyası |
-
-
 ## Geliştirme Planı
 
 Bu sürüm, **prototip** olarak tasarlanmıştır.  
-İlerleyen aşamalarda proje bir **web arayüzü** ile entegre edilerek:
-- Kullanıcıların tarayıcı üzerinden sorgu yapabildiği bir sistem haline getirilecek,  
+İlerleyen aşamalarda proje bir **web arayüzü** ile entegre edilerek Kullanıcıların tarayıcı üzerinden sorgu yapabildiği bir sistem haline getirilmesini hedefliyorum.
 
 
 ## Notlar
 
-- Google Custom Search API için `API_KEY` ve `CX_KEY` bilgileri 
+- Google Custom Search API için `API_KEY` ve `CX_KEY` bilgileri ayarlar.py dosyasından ayarlanmalı.
+- Uygulama şu anda seri olarak çalışmaz. Test amaçlı yapılmıstır.
